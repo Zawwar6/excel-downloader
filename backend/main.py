@@ -16,8 +16,12 @@ app.add_middleware(
 )
 
 # Ensure uploads folder exists
-UPLOAD_FOLDER = "uploads"
+UPLOAD_FOLDER = "/tmp/uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+
+DOWNLOAD_FOLDER = "/tmp/downloads"
+os.makedirs(DOWNLOAD_FOLDER, exist_ok=True)
+ZIP_PATH = "/tmp/images.zip"
 
 @app.get("/")
 def home():
