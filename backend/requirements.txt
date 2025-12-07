@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pandas
+openpyxl
+requests
+aiohttp
+aiofiles
+python-multipart
+zipfile36
